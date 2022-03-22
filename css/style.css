@@ -46,7 +46,7 @@ a, a:hover {
     margin: 8px;
 }
 .dsmovie-card {
-    width: 360px;
+    width: 100%px;
 }
 #dsmovie-card-list {
     padding: 40px;
