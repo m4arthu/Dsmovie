@@ -4,6 +4,7 @@
     --color-prymary:#4d41cd;
     --menu--white:#fff;
     --font-menu:#4a4a4a;
+    --text-light-gray:#aaa
 }
 * {
     font-family:'open Sans', sans-serif;
@@ -80,12 +81,43 @@ a, a:hover {
     align-items: center;
     justify-content:center;
     border-radius: 4px;
+    border: 0;
 }
 .dsmovie-form-container {
     padding: 40px 0px;
     max-width: 480px;
 }
 
- #btn-save {
+.dsmovie-form-description {
+    background-color: var(--menu--white);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-form-description h3{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dsmovie-form {
+    width: 100%;
+} 
+.dsmovie-form-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.dsmovie-form-group {
+    margin-bottom: 20px; 
+}
+.dsmovie-form-group label {
+   color: var(--text-light-gray);
+   font-size: 12px;
 }
