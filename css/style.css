@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 :root {
-    --bg-gray:#fddd;
+    --bg-gray:#c7bfbfdd;
     --color-prymary:#4d41cd;
     --menu--white:#fff;
     --font-menu:#4a4a4a;
@@ -50,7 +50,7 @@ a, a:hover {
     width: 100%px;
 }
 #dsmovie-card-list {
-    padding: 40px;
+    padding: 0 10px;
 }
 .dsmovie-card img {
     width: 100%;
@@ -147,6 +147,49 @@ a, a:hover {
     margin-bottom: 10px;
 }
 
+.dsmovie-pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  15px 0;
+}
 
+.dsmovie-pagination-box {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+}
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12;
+    font-weight: 400;
+    color: var(--color-prymary);
+}
 
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-prymary);
+    border-radius: 4px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
 
+.dsmovie-pagination-box button img {
+    filter: invert(29%) sepia(92%) saturate(1411%) hue-rotate(228deg) brightness(81%) contrast(99%);
+}
+
+.dsmovie-pagination-box button:disabled{
+    background-color: var(--menu--white);
+    border: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-flip-horizon{
+    transform: rotate(180deg);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
